@@ -2,7 +2,7 @@
 title: "GitLab With Docker"
 date: 2020-03-08T10:45:49+08:00
 draft: false
-toc: true
+toc: false
 images:
 tags:
   - Docker
@@ -106,7 +106,7 @@ sudo systemctl start nginx
 
 #### /etc/nginx/conf.d/gitlab.conf
 
-```
+```nginx
 server {
 	listen 80;
 	server_name gitlab.example.com;
