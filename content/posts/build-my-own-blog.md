@@ -8,6 +8,9 @@ tags:
   - blog
   - Hugo
   - Nginx
+categories:
+  - None
+isCJKLanguage: true
 ---
 
 ## 使用 Hugo 构建博客框架
@@ -84,7 +87,7 @@ vim blog.conf
 
 在 blog.conf 中添加如下配置。若不用 HTTPS，将 443 端口的配置信息除 ssl 相关配置外全部放 80 端口的配置下即可。
 
-```
+```nginx
 server {
 	listen 443 ssl;
 	server_name c-leon.top www.c-leon.top;

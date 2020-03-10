@@ -120,17 +120,17 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.zh]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "琐事记"
     weight    = 1
     copyright = '备案号: <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a>'
 
   [languages.en]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "record something"
     weight    = 1
     copyright = '备案号: <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a>'
 
   [languages.fr]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = ""
     weight    = 2
     copyright = '备案号: <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a>'
 
