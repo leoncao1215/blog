@@ -1,0 +1,14 @@
+<footer class="footer">
+	{{ partial "social.html" . }}
+
+	<p><a>&copy; 2020 | leoncao</a></p>
+	<p><a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a></p>
+	<p>
+		<a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+		<a>|</a>
+		<a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy</a>
+	</p>
+
+	{{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
+	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }}></script>
+</footer>

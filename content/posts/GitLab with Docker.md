@@ -2,8 +2,6 @@
 title: "GitLab With Docker"
 date: 2020-03-08T10:45:49+08:00
 draft: false
-toc: false
-images:
 tags:
   - Docker
   - GitLab

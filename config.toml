@@ -1,145 +1,107 @@
-baseURL = "https://c-leon.top/"
-title   = "Léon 的个人博客"
-
-DefaultContentLanguage = "zh"
-
-theme = "hello-friend-ng"
-
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
-
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
-
-# googleAnalytics = ""
-# disqusShortname = ""
-
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
-
-buildDrafts  = false
-buildFuture  = false
-buildExpored = false
-canonifyURLs = true
-
+baseURL = "https://c-leon.top"
+languageCode = "zh-cn"
+title = "Léon 的个人博客"
+theme = "noteworthy"
 enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
+paginate = 4 # Set the number of posts to show before overflowing to the next page.
+summaryLength = 10 # Configure how long the post summary should be on the homepage.
 
-[permalinks]
-  posts = "/posts/:year/:month/:title/"
+# Add your Google Analytics identifier: UA-XXXXXXXX-X
+googleAnalytics = "" 
 
-[author]
-  name = "leoncao"
-
-[blackfriday]
-  hrefTargetBlank = true
+# Add your Disqus shortname here.
+disqusShortname = ""    
 
 [taxonomies]
-  tag      = "tags"
-  category = "categories"
+  tag = "tags"
+
+[author]
+	name = "leoncao"
+
+# Set to false to disallow raw HTML in markdown files
+[markup.goldmark.renderer]
+    unsafe = true
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+	math = true
+	# Blog description at the top of the homepage. Supports markdown.
+	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
 
-  # Metadata mostly used in document's head
-  description = "Record my life."
-  keywords = ""
-  images = [""]
+	# Add links to your accounts. Remove the ones you don't want to include.
+	# Main
+	email = "mailto:me@c-leon.top"
+  #   facebook = "#"
+  #   twitter = "#"
+	# instagram = "#"
+	# tumblr = "#"
+	# reddit = "#"
+	# pinterest = "#"
+	# youtube = "#"
+  #   vimeo = "#"
+	# weibo = "#"
+	# vk = "#"
+	linkedin = "https://www.linkedin.com/in/利航-曹-a958911a3/"
 
-  homeSubtitle = "Record my life."
+	# Writing
+  #   medium = "#"
+	# blogger = "#"
+	# wordpress = "#"
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = ""
+	# Creative & Visual
+  #   dribbble = "#"
+	# behance = "#"
+	# deviantart = "#"
+	# flickr = "#"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
+	# Programming
+    github = "https://github.com/leoncao1215"
+	# stackoverflow = "#"
+	# gitlab = "#"
+	# codepen = "#"
 
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
-  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  customCSS = []
-  customJS  = []
+    # Academic
+    # googlescholar = "#"
+    # impactstory = "#"
+    # orcid = "#"  
 
-  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  justifyContent = false  # Set "text-align: justify" to .content.
+# Menu links along the sidebar navigation.
+[[menu.main]]
+	identifier = "tags"
+	name = "Tags"
+	url = "/tags/"
+	weight = 1
 
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+[[menu.main]]
+	identifier = "archives"
+	name = "Archives"
+	url = "/archives/"
+	weight = 2
 
-  # Default theme "light" or "dark"
-  defaultTheme = "light"
-  themeColor = "#252627"
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about/"
+	weight = 3
 
-  # Colors for favicons
-  [params.favicon.color]
-    mask = "#252627"
-    msapplication = "#252627"
-    theme = "#252627"
-
-  [params.logo]
-    logoText     = "$ cd ~"
-    logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely.
-    # logoCursorDisabled = false
-    # Set to a valid CSS color to change the cursor in the logo.
-    # logoCursorColor    = "#67a2c9"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
-
-  # Social icons
-  # [[params.social]]
-  #   name = "twitter"
-  #   url  = "https://twitter.com/"
-
-  [[params.social]]
-    name = "email"
-    url  = "mailto:me@c-leon.top"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/leoncao1215"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/利航-曹-a958911a3/"
-
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
-
-[languages]
-  [languages.zh]
-    subtitle  = "琐事记"
-    weight    = 1
-    copyright = '备案号: <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a>'
-
-  [languages.en]
-    subtitle  = "record something"
-    weight    = 1
-    copyright = '备案号: <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a>'
-
-  [languages.fr]
-    subtitle  = ""
-    weight    = 2
-    copyright = '备案号: <a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">苏ICP备19068370号</a>'
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+# Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true

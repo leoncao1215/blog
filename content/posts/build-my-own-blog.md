@@ -2,15 +2,10 @@
 title: "构建自己的博客"
 date: 2020-03-03T11:43:01+08:00
 draft: false
-toc: false
-images:
 tags:
   - blog
   - Hugo
   - Nginx
-categories:
-  - None
-isCJKLanguage: true
 ---
 
 ## 使用 Hugo 构建博客框架

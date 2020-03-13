@@ -2,8 +2,6 @@
 title: "Nginx配置简介"
 date: 2020-03-07T20:21:34+08:00
 draft: false
-toc: false
-images:
 tags:
   - Nginx
   - depoly

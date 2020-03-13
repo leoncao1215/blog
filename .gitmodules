@@ -4,3 +4,12 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/leoncao1215/blog-static.git
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "themes/LeaveIt"]
+	path = themes/LeaveIt
+	url = https://github.com/liuzc/LeaveIt.git
+[submodule "themes/noteworthy"]
+	path = themes/noteworthy
+	url = https://github.com/kimcc/hugo-theme-noteworthy.git
