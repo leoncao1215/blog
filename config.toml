@@ -25,7 +25,7 @@ disqusShortname = ""
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
+	description = "采用 Hugo 构建的个人博客"
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
